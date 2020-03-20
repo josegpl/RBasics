@@ -15,3 +15,20 @@ murders$population
 names(murders) #list columns (variables)
 
 length(murders$state)
+
+#using another dataset
+
+data("movielens")
+class(movielens)
+str(movielens)
+head(movielens)
+
+#analyze how many movies got each rating
+table(movielens$rating)
+
+names(movielens)
+
+#how many levels are in factors in movielens dataset
+
+levels(movielens$genres)
+nlevels(movielens$genres)
